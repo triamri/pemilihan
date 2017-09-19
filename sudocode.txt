@@ -1,0 +1,39 @@
+SIMPAN Nilai Pada 'Jumlah Pemilih'
+SIMPAN Nilai Pada 'Pilih'
+TENTUKAN 'Pilih Singa' Sama Dengan 0
+TENTUKAN 'Pilih George' Sama Dengan 0
+TENTUKAN 'Pilih Ape' Sama Dengan 0
+TENTUKAN 'Nilai' Sama Dengan 0
+
+
+IF 'Jumlah Pemilih' Lebih Dari Nol :
+HITUNG 'Pilih Singan' ditambah 'Pilih George' ditambah 'Pilih Ape'
+SIMPAN hasil hitung di 'Hasil'	
+	IF 'Jumlah Pemilih' Sama Dengan Nilai :
+		TULISKAN 'maaf, Data pemilih sudah NILAI'
+	ELSE :
+		IF 'pilih' Sama Dengan 1 :
+			HITUNG DAN SIMPAN 'Pilih Singa' ditambah 1			
+		ELSE IF 'pilih' Sama Dengan 2 :
+			HITUNG DAN SIMPAN 'Pilih George' ditambah 1
+		ELSE :
+			HITUNG DAN SIMPAN 'Pilih Ape' ditambah 1
+		ENDIF
+	ENDIF
+ELSE :
+	TULISKAN 'Maaf, Data Pemilih Tidak Boleh kosong'
+ENDIF
+
+IF 'Hasil' Lebih Besar Dari 0 :
+	HITUNG DAN SIMPAN 'Persen Singa' dibagi Hasil dikali 100
+	HITUNG DAN SIMPAN 'Persen George' dibagi Hasil dikali 100
+	HITUNG DAN SIMPAN 'Persen Ape' dibagi Hasil dikali 100
+	TULISKAN Total Data Pemilih : 'hasil' Dari Data Pemilih Terdaftar 'Jumlah Pemilih'
+	TULISKAN Si Singa Mendapatkan Suara Sebesar 'Persen Singa' %
+	TULISKAN Si George Mendapatkan Suara Sebesar 'Persen George' %
+	TULISKAN Si Ape Mendapatkan Suara Sebesar 'Persen Ape' %
+  
+ELSE :
+	TULIS 'Maaf, Data Pemilih Tidak Boleh kosong'
+ENDIF
+	
